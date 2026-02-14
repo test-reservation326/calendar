@@ -3,12 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
     <title>calender</title>
 </head>
 
 <body>
     <h1>calender</h1>
+    <form method="GET"
+        action="https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec">
+        <div style="display:flex; gap:8px; align-items:center;">
+            <input type="hidden" name="action" value="getCalender">
+            <select name="userGrade">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <p>年</p>
+            <select name="userClass">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <p>組</p>
+            <select name="calenderType">
+                <option value="Apple Calender">iPhone,iPad標準カレンダー</option>
+                <option value="Google Calender">Google Calender</option>
+            </select>
+            <input type="submit" value="submit">
+        </div>
+    </form>
 </body>
 
 </html>
