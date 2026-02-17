@@ -39,6 +39,4 @@ function hideLoadingAnimation() {
     const loadingAnimation = document.getElementById("");
 
 }
-
-GetCalenderUrl();
 //(C) 2026 test.calender326
