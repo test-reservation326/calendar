@@ -13,17 +13,18 @@ function getParameters() {
 
 }
 
-let reloadButton = document.getElementById('rb');
-reloadButton.onclick = doReload;
-
-function doReload() {
-    window.location.reload(false);
-}
-
 function showDialog() {
 
 }
 
-function deleteDialog() {
+function hideDialog() {
+
+}
+
+function showLoadingAnimation() {
+
+}
+
+function hideLoadingAnimation() {
 
 }
