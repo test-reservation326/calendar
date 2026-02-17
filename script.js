@@ -19,3 +19,11 @@ reloadButton.onclick = doReload;
 function doReload() {
     window.location.reload(false);
 }
+
+function showDialog() {
+
+}
+
+function deleteDialog() {
+
+}
