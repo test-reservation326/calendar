@@ -4,7 +4,7 @@ async function GetCalenderUrl() {
         return data.json();
     }).then(function (json) {
         if (json.success) {
-
+            let calenderUrl = json.calenderUrl;
         }
     });
 }
