@@ -1,7 +1,7 @@
-async function GetCalenderUrl() {
-    const userGrade = getParameter("userGrade");
-    const userClass = getParameter("userClass");
+async function getCalenderUrl() {
     const url = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalender&userGrade=${userGrade}&userClass=${userClass}`;
+    let userGrade = getParameter("userGrade");
+    let userClass = getParameter("userClass");
     fetch(url).then(function (data) {
         showLoadingAnimation();
         return data.json();
