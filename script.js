@@ -1,7 +1,6 @@
 async function GetCalenderUrl() {
-    const userGrade = getParameter(userGrade);
-    const userClass = getParameter(userClass);
-
+    const userGrade = getParameter("userGrade");
+    const userClass = getParameter("userClass");
     const url = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalender&userGrade=${userGrade}&userClass=${userClass}`;
     fetch(url).then(function (data) {
         showLoadingAnimation();
@@ -37,6 +36,5 @@ function showLoadingAnimation() {
 
 function hideLoadingAnimation() {
     const loadingAnimation = document.getElementById("");
-
 }
 //(C) 2026 test.calender326
