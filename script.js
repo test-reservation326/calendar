@@ -12,6 +12,7 @@ async function getCalendarUrl() {
         }
     });
 }
+getCalendarUrl();
 
 function getParameter(paramName) {
     const urlParams = new URLSearchParams(window.location.search);
