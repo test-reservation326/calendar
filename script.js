@@ -5,11 +5,11 @@ async function getCalendarUrl() {
     if (userGrade && userClass) {
         const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
         let response = await fetch(api);
-        let json = await JSON.parse(response);
+        let json = await response.json();
         if (json.success) {
             console.log(json.url);
-            var link = document.getElementById("link")[0];
-            link.insertAdjacentHTML("beforeend", `<a href=${url};>get</a>`)
+            var link = document.getElementById("link");
+            link.insertAdjacentHTML("beforeend", `<a href=${json.url};>get</a>`);
         }
     }
 
