@@ -1,8 +1,11 @@
 async function getCalendarUrl() {
     let userGrade = getParameter("userGrade");
     let userClass = getParameter("userClass");
-    const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
-    console.log(fetch(api));
+
+    if (userGrade && userClass) {
+        const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
+        console.log(fetch(api));
+    }
 
     //deleteParams
     const url = new URL(window.location.href);
