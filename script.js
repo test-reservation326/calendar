@@ -8,6 +8,8 @@ async function getCalendarUrl() {
         let json = await JSON.parse(response);
         if (json.success) {
             console.log(json.url);
+            var link = document.getElementById("link")[0];
+            link.insertAdjacentHTML("beforeend", `<a href=${url};>get</a>`)
         }
     }
 
