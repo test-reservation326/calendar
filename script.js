@@ -3,6 +3,11 @@ async function getCalendarUrl() {
     let userClass = getParameter("userClass");
     const url = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
     console.log(fetch(url));
+
+    //deleteParams
+    const url = new URL(window.location.href);
+    window.history.replaceState({}, '', url.pathname);
+
     // fetch(url).then(function (data) {
     // showLoadingAnimation();
     // return data.json();
