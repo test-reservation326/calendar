@@ -9,6 +9,7 @@ async function getCalendarUrl() {
             const json = await res.json();
             console.log(json);
             if (json.success) {
+                console.log(json.calendarUrl);
                 document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
             }
 
