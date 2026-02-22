@@ -2,17 +2,18 @@ async function getCalendarUrl() {
     let userGrade = getParameter("userGrade");
     let userClass = getParameter("userClass");
 
-    if (userGrade && userClass) {
-        if (userGrade != 0 && userClass != 0) {
-            try {
-                const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
-                const res = await fetch(api);
-                const json = await res.json();
-                console.log(json);
-                document.getElementById("link").innerHTML = `<a href=${json.calenderUrl}>get</a>`;
-            } catch (e) {
-                console.log(e);
+    if (userGrade && userClass && userGrade != 0 && userClass != 0) {
+        try {
+            const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
+            const res = await fetch(api);
+            const json = await res.json();
+            console.log(json);
+            if (json.success) {
+                document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
             }
+
+        } catch (e) {
+            console.log(e);
         }
     }
     deleteParams();
