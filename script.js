@@ -4,6 +4,7 @@ async function getCalendarUrl() {
 
     if (userGrade && userClass) {
         if (userGrade != 0 && userClass != 0) {
+            console.log(userGrade, userClass);
             const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
             let json = fetch(api).then(res => res.json);
             console.log(json);
