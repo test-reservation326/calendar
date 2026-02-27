@@ -5,10 +5,12 @@ async function getCalendarUrl() {
     if (userGrade && userClass && userGrade != 0 && userClass != 0) {
         try {
             const api = `https://script.google.com/macros/s/AKfycbx3zfsa6aJeL8ql97_q0EpxP1vvL7e5LJe_TYnucMHckyhZ_UIa_kz5obdE8NTOuCco/exec?action=getCalendar&userGrade=${userGrade}&userClass=${userClass}`;
+            showLoadingAnimation();
             const res = await fetch(api);
             const json = await res.json();
             console.log(json);
             if (json.success) {
+                hideLoadingAnimation();
                 console.log(json.calendarUrl);
                 document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
             }
@@ -43,12 +45,12 @@ function hideDialog() {
 
 function showLoadingAnimation() {
     const screenMasc = document.getElementById("");
-    const loadingAnimation = document.getElementById("");
+    const loadingAnimation = document.getElementById("loading").innerHTML("<p>LOADING...</p>");
 }
 
 function hideLoadingAnimation() {
     const screenMasc = document.getElementById("");
-    const loadingAnimation = document.getElementById("");
+    const loadingAnimation = document.getElementById("loading").innerHTML("<p></p>");
 }
 
 //(C) 2026 test.resavation326
