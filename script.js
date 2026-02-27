@@ -45,12 +45,12 @@ function hideDialog() {
 
 function showLoadingAnimation() {
     const screenMasc = document.getElementById("");
-    const loadingAnimation = document.getElementById("loading").innerHTML("<p>LOADING...</p>");
+    const loadingAnimation = document.getElementById("loading").innerHTML = "<p>LOADING...</p>";
 }
 
 function hideLoadingAnimation() {
     const screenMasc = document.getElementById("");
-    const loadingAnimation = document.getElementById("loading").innerHTML("<p></p>");
+    const loadingAnimation = document.getElementById("loading").innerHTML = "<p></p>";
 }
 
 //(C) 2026 test.resavation326
