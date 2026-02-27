@@ -12,12 +12,11 @@ async function getCalendarUrl() {
                 console.log(json.calendarUrl);
                 document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
             }
-
         } catch (e) {
             console.log(e);
+            showDialog("エラー", "時間をおいてから\nもう一度やり直してください。");
         }
     }
-    deleteParams();
 }
 
 function deleteParams() {
@@ -33,22 +32,23 @@ function getParameter(paramName) {
 }
 
 function showDialog(title, message) {
+    const screenMasc = document.getElementById("");
     const dialog = document.getElementById("");
-    const dialogTitle = document.getElementById("");
-    const dialogMessage = document.getElementById("");
 }
 
 function hideDialog() {
+    const screenMasc = document.getElementById("");
     const dialog = document.getElementById("");
-    const dialogTitle = document.getElementById("");
-    const dialogMessage = document.getElementById("");
 }
 
 function showLoadingAnimation() {
+    const screenMasc = document.getElementById("");
     const loadingAnimation = document.getElementById("");
 }
 
 function hideLoadingAnimation() {
+    const screenMasc = document.getElementById("");
     const loadingAnimation = document.getElementById("");
 }
+
 //(C) 2026 test.resavation326
