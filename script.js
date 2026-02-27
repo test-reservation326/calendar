@@ -50,7 +50,7 @@ function showLoadingAnimation() {
 
 function hideLoadingAnimation() {
     const screenMasc = document.getElementById("");
-    const loadingAnimation = document.getElementById("loading").innerHTML = "<p></p>";
+    const loadingAnimation = document.getElementById("loading").innerHTML = "<p>END</p>";
 }
 
 //(C) 2026 test.resavation326
