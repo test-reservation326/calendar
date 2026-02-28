@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
-    <title>calender</title>
+    <title>calendar</title>
 </head>
 
 <body>
-    <h1>calender</h1>
+    <h1>calendar</h1>
     <form method="GET">
         <div style="display:flex; gap:8px; align-items:center;">
             <input type="hidden" name="action" value="getCalender">
             <select name="userGrade">
+                <option value="0">選択</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
             <p>年</p>
             <select name="userClass">
+                <option value="0">選択</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -31,14 +33,18 @@
                 <option value="10">10</option>
             </select>
             <p>組</p>
-            <select name="calenderType">
-                <option value="Apple">iPhone,iPad標準カレンダー</option>
-                <option value="Google">Google Calender</option>
-            </select>
             <input type="submit" value="submit">
         </div>
     </form>
-    <p>&copy;2026 test.reservation326</p>
+    <div id="link">
+        <p style="margin: 0;">link</p>
+    </div>
+    <div id="loading" style="color:white; background-color: red; font-size:250%;">
+        <p style="text-align:center;">NONE</p>
+    </div>
+    <p style="text-align: center;">&copy;2026 test.reservation326</p>
 </body>
+<script src="script.js"></script>
 
 </html>
+<!-- (C) 2026 test.resavation326 -->
