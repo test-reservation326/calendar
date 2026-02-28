@@ -51,7 +51,7 @@ function showLoadingAnimation() {
 
 function hideLoadingAnimation() {
     const screenMasc = document.getElementById("");
-    const loadingAnimation = document.getElementById("loading").innerHTML = "<p style='color:white; background-color:red; font-size=250%';>END</p>";
+    const loadingAnimation = document.getElementById("loading").innerHTML = "<p style='color:white; background-color:red; font-size=250%';>SUCCESS</p>";
 }
 
 //(C) 2026 test.resavation326
