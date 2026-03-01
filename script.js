@@ -11,12 +11,12 @@ async function getCalendarUrl() {
             showLoadingAnimation();
             const res = await fetch(api);
             const json = await res.json();
-            console.log(json);
+            // console.log(json);
             if (json.success && json.calendarUrl != null) {
                 hideLoadingAnimation();
                 // console.log(json.calendarUrl);
                 // document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
-                // console.log(json.calendarUrl);
+                console.log(json.calendarUrl);
                 window.location.href = `${json.calenderUrl}`;
                 deleteParams();
             } else {
