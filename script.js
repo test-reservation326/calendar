@@ -14,9 +14,9 @@ async function getCalendarUrl() {
             console.log(json);
             if (json.success && json.calendarUrl != null) {
                 hideLoadingAnimation();
-                console.log(json.calendarUrl);
-                document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
-                console.log(json.calendarUrl);
+                // console.log(json.calendarUrl);
+                // document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
+                // console.log(json.calendarUrl);
                 window.location.href = `${json.calenderUrl}`;
                 deleteParams();
             } else {
