@@ -12,17 +12,14 @@ async function getCalendarUrl() {
             const res = await fetch(api);
             const json = await res.json();
             console.log(json);
-            if (json.success) {
+            if (json.success && json.calendarUrl != null) {
                 hideLoadingAnimation();
                 console.log(json.calendarUrl);
                 document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
-                if (json.calendarUrl == null) {
-                    sleep(5000);
-                    getCalendarUrl();
-                }
                 deleteParams();
             } else {
-                showDialog("エラー", "時間をおいてから\nもう一度やり直してください。");
+                sleep(5000);
+                getCalendarUrl();
             }
         } catch (e) {
             console.log(e);
