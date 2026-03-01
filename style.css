@@ -1,1 +1,11 @@
+@font-face {
+    font-family: "Makinau";
+    src: url("../font/Makinas-4-Flat.otf") format(‘opentype’);
+    font-display: swap;
+}
+
+h1 {
+    font-family: "Makinas";
+}
+
 /* (C) 2026 test.resavation326 */
