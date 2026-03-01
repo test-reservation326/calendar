@@ -1,3 +1,6 @@
+const sleep = (time) => new Promise((resolve) => {
+    setTimeout((resolve, time));
+})
 async function getCalendarUrl() {
     let userGrade = getParameter("userGrade");
     let userClass = getParameter("userClass");
@@ -11,9 +14,15 @@ async function getCalendarUrl() {
             console.log(json);
             if (json.success) {
                 hideLoadingAnimation();
-                deleteParams();
                 console.log(json.calendarUrl);
                 document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>get</a>`;
+                if (json.message == "Create") {
+                    sleep(5000);
+                    getCalendarUrl();
+                }
+                deleteParams();
+            } else {
+                showDialog("エラー", "時間をおいてから\nもう一度やり直してください。");
             }
         } catch (e) {
             console.log(e);
