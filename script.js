@@ -1,6 +1,7 @@
 const sleep = (time) => new Promise((resolve) => {
     setTimeout((resolve, time));
-})
+});
+
 async function getCalendarUrl() {
     let userGrade = getParameter("userGrade");
     let userClass = getParameter("userClass");
@@ -13,7 +14,6 @@ async function getCalendarUrl() {
             const json = await res.json();
             if (json.success && json.calendarUrl != null) {
                 hideLoadingAnimation();
-                // window.location.href = `${json.calendarUrl}`;
                 document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>link</a>`;
                 deleteParams();
             } else {
