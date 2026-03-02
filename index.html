@@ -1,51 +1,70 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>単元テストカレンダー</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>単元テストカレンダー</title>
 </head>
 
 <body>
-    <h1>単元テストカレンダー</h1>
-    <form method="GET">
-        <div style="display:flex; gap:8px; align-items:center;">
-            <input type="hidden" name="action" value="getCalender">
-            <select name="userGrade">
-                <option value="0">選択</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <p>年</p>
-            <select name="userClass">
-                <option value="0">選択</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <p>組</p>
-            <input type="submit" value="submit">
-        </div>
-    </form>
-    <div id="link">
-        <p style="margin: 0;">link</p>
-    </div>
-    <div id="loading" style="color:white; background-color: red; font-size:250%;">
-        <p style="text-align:center;">NONE</p>
-    </div>
-    <p style="text-align: center;">&copy;2026 test.reservation326</p>
-</body>
+
+<h1>単元テストカレンダー</h1>
+
+<div class="card">
+
+<form method="GET" class="form">
+
+<input type="hidden" name="action" value="getCalender">
+
+<select name="userGrade">
+<option value="0">選択</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+
+<span>年</span>
+
+<select name="userClass">
+<option value="0">選択</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+
+<span>組</span>
+
+<input type="submit" value="表示">
+
+</form>
+
+</div>
+
+
+<div id="link">
+<p>link</p>
+</div>
+
+
+<div id='loading'><p>NONE</p></div>
+
+
+<footer>
+©2026 test.reservation326
+</footer>
+
 <script src="script.js"></script>
 
+</body>
 </html>
-<!-- (C) 2026 test.resavation326 -->
