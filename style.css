@@ -72,4 +72,12 @@ footer{
     margin-top:40px;
     color:#555;
 }
+
+.copy {
+  font-size: 1em;
+}
+
+.copy span {
+  font-size: 1.2em;
+}
 /* (C) 2026 test.resavation326 */
