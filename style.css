@@ -1,11 +1,75 @@
 @font-face {
     font-family: "Makinas";
-    src: url("fonts/Makinas-4-Flat.otf") format("opentype");
+    src: url("fonts/Makinas-4-Square.otf") format("opentype");
     font-display: swap;
 }
 
-h1 {
-    font-family: "Makinas", sans-serif;
+body{
+    background:#C9DCEA;
+    margin:0;
+    font-family:sans-serif;
+    text-align:center;
 }
 
+h1{
+    font-family:"Makinas",sans-serif;
+    color:#6C7B91;
+    margin-top:30px;
+}
+
+.card{
+    margin:20px auto;
+    padding:20px;
+    width:90%;
+    max-width:500px;
+    border-radius:30px;
+    background: radial-gradient(#D5E0E8,#E8F2F7);
+    border:2px solid #DEE9F3;
+    box-shadow:
+    -5px -5px 30px rgba(255,255,255,0.8),
+    5px 5px 50px rgba(0,40,100,0.3);
+
+}
+
+.form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+select{
+    padding:8px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+}
+
+input[type=submit]{
+    padding:10px 20px;
+    border-radius:20px;
+    border:none;
+    background:#6C7B91;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#link{
+margin-top:20px;
+}
+
+#loading{
+    margin:20px auto;
+    width:300px;
+    color:white;
+    background:red;
+    font-size:150%;
+    border-radius:10px;
+}
+footer{
+    margin-top:40px;
+    color:#555;
+}
 /* (C) 2026 test.resavation326 */
