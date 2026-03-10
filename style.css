@@ -51,6 +51,7 @@ main {
 }
 
 select {
+    color: #6C7B92;
     padding: 12px 14px;
     border-radius: 20px;
     border: none;
