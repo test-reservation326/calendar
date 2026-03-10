@@ -4,19 +4,16 @@
     font-display: swap;
 }
 
-body {
-    background: #C9DCEA;
-    color: #6C7B91;
-    margin: 0;
-    font-family: sans-serif;
-    text-align: center;
+body{
+    background:#C9DCEA;
+    margin:0;
+    font-family:sans-serif;
+    text-align:center;
 }
 
-h1 {
-    /*font-family:"Makinas",sans-serif;*/
-    color: #6C7B91;
-    margin-top: 30px;
-}
+h1{
+    color:#6C7B91;
+    margin-top:30px;
 
 .card {
     margin: 20px auto;
