@@ -30,7 +30,7 @@ main {
 
 .card {
     margin: 20px auto;
-    padding: 30px;
+    padding: 20px 30px;
     width: 80%;
     max-width: 500px;
     border-radius: 30px;
