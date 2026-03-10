@@ -14,7 +14,6 @@ html, body {
 
 body {
     margin: 0;
-    padding:0 16px;
     font-family: sans-serif;
     text-align: center;
     min-height: 100vh;
@@ -35,8 +34,8 @@ main {
 
 .card {
     margin: 10px auto;
-    padding: 20px;
-    width: min(500px, 100%);
+    padding: 2vh 3vw;
+    max-width: 500px;
     border-radius: 30px;
     background: radial-gradient(#D5E0E8, #E8F2F7);
     border: 2px solid #DEE9F3;
