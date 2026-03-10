@@ -59,4 +59,4 @@ function hideLoadingAnimation() {
     const loadingAnimation = document.getElementById("loading").innerHTML = "<div id=''><p>SUCCESS</p></div>";
 }
 
-//(C) 2026 test.resavation326
+//©2026 test.resavation326
