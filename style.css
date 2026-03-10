@@ -4,16 +4,18 @@
     font-display: swap;
 }
 
-body{
-    background:#C9DCEA;
-    margin:0;
-    font-family:sans-serif;
-    text-align:center;
+
+body {
+    background: #C9DCEA;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-h1{
-    color:#6C7B91;
-    margin-top:30px;
+h1 {
+    color: #6C7B91;
+    margin-top: 30px;
+}
 
 .card {
     margin: 20px auto;
@@ -36,6 +38,7 @@ h1{
     gap: 10px;
     flex-wrap: wrap;
 }
+
 
 select {
     color: #6C7B91;
@@ -64,6 +67,7 @@ input[type=submit] {
     margin-top: 20px;
 }
 
+
 #loading {
     margin: 20px auto;
     width: 300px;
@@ -73,9 +77,9 @@ input[type=submit] {
     border-radius: 10px;
 }
 
-footer {
+HEAD footer {
     margin-top: 40px;
-    color: #555;
+    color: #6C7B91;
 }
 
 .copy {
