@@ -39,6 +39,10 @@ h1 {
     flex-wrap: wrap;
 }
 
+form span {
+    color: #6C7B91;
+}
+
 select {
     color: #6C7B91;
     padding: 10px;
