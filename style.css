@@ -39,7 +39,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-
 select {
     color: #6C7B91;
     padding: 10px;
@@ -66,7 +65,6 @@ input[type=submit] {
 #link {
     margin-top: 20px;
 }
-
 
 #loading {
     margin: 20px auto;
