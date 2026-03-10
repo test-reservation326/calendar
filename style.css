@@ -6,7 +6,7 @@
 
 
 body {
-    background: #C9DCEA;
+    background: radial-gradient(#E6EFF6, #C9DCEA);
     margin: 0;
     font-family: sans-serif;
     text-align: center;
@@ -37,6 +37,10 @@ h1 {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+form span {
+    color: #6C7B91;
 }
 
 select {
