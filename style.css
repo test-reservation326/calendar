@@ -56,6 +56,9 @@ main {
 }
 
 select {
+
+    -webkit-appearance: none;
+    appearance: none;
     color: #6C7B92;
     padding: 10px 20px;
     border-radius: 50px;
