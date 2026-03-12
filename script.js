@@ -14,7 +14,7 @@ async function getCalendarUrl() {
             const json = await res.json();
             if (json.success && json.calendarUrl != null) {
                 hideLoadingAnimation();
-                document.getElementById("link").innerHTML = `<a href=${json.calendarUrl}>link</a>`;
+                document.getElementById("link").innerHTML = `<p><a href=${json.calendarUrl}>カレンダーを登録</a></p>`;
                 deleteParams();
             } else {
                 await sleep(5000);
