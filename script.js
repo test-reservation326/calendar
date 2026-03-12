@@ -14,6 +14,8 @@ async function getCalendarUrl() {
             const json = await res.json();
             if (json.success && json.calendarUrl != null) {
                 hideLoadingAnimation();
+                element = document.getElementById('link');
+                highlight(element);
                 document.getElementById("link").innerHTML = `<p><a href=${json.calendarUrl}>カレンダーを登録</a></p>`;
                 deleteParams();
             } else {
@@ -57,6 +59,10 @@ function showLoadingAnimation() {
 function hideLoadingAnimation() {
     const screenMasc = document.getElementById("");
     const loadingAnimation = document.getElementById("link").innerHTML = "<p>SUCCESS</p>";
+}
+
+function highlight(element) {
+    return element.document.classList.add('highlight');
 }
 
 //©2026 test.resavation326

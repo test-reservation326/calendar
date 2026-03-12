@@ -78,6 +78,14 @@ input[type=submit] {
     cursor: pointer;
 }
 
+a {
+    color: #6C7B91;
+}
+
+.highlight {
+    box-shadow: -5px -5px 30px 0px rgba(100, 200, 255, 0.8), 5px 5px 50px 0px rgba(0, 100, 40, 0.3);
+}
+
 #link {
     margin: 10px auto;
     width: 100%;
